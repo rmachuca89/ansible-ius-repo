@@ -1,0 +1,4 @@
+[
+  "tests/test_ius_repo.py::test_ius_repo_installed[ansible://ansible-ius-6]", 
+  "tests/test_ius_repo.py::test_ius_repo_installed[ansible://ansible-ius-7]"
+]

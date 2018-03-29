@@ -1,0 +1,3 @@
+{
+  "tests/test_ius_repo.py::test_ius_repo_installed[ansible://instance]": true
+}
