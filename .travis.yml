@@ -1,0 +1,22 @@
+---
+sudo: required
+language: python
+services:
+  - docker
+cache:
+  - pip
+
+before_install:
+  - sudo apt-get -qq update
+install:
+  - pip install molecule
+  # - pip install required driver (e.g. docker, python-vagrant, shade, boto, apache-libcloud)
+  - pip install docker-py
+script:
+  - ansible --version
+  - molecule --version
+  - docker -v
+  - molecule test
+
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
